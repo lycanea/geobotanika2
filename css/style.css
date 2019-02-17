@@ -826,7 +826,7 @@
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #4CAF50;
+  background-color: #555;
   color: white;
 }
 
@@ -844,13 +844,15 @@ div.content {
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .sidebar {
-    width: 100%;
+    width: 0px;
     height: auto;
     position: relative;
+    left: auto;
+    top: auto;
   }
-  .sidebar a {float: left;}
+  .sidebar a {float: right;}
   div.content {margin-left: 0;}
 }
 
@@ -859,5 +861,7 @@ div.content {
   .sidebar a {
     text-align: center;
     float: none;
+     top: auto;;
+  right: auto;
   }
 }

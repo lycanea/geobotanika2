@@ -37,7 +37,9 @@
 	}
 	
 	/* Sidebar */
-
+.content {width:100%;}
+.has-sidebar .content {width:68.5%;}
+.sidebar {width:31.5%;}
 
 /* Main */
 

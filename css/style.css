@@ -844,13 +844,9 @@ div.content {
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .sidebar {
-    width: 0px;
-    height: auto;
-    position: relative;
-    left: auto;
-    top: auto;
+   display: none;
   }
   .sidebar a {float: right;}
   div.content {margin-left: 0;}

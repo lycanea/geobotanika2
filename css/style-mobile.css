@@ -40,8 +40,8 @@
 .sidebar {
 
   position: absolute;
-  top: 700px;
-  right: 80px;
+  top: auto;
+  right: auto;
   display: block;
 }
 

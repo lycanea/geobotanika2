@@ -861,7 +861,7 @@ div.content {
   .sidebar a {
     text-align: center;
     float: none;
-     top: auto;;
-  right: auto;
+     top: 0px;;
+  right: 0px;
   }
 }

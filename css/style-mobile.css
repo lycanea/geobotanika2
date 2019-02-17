@@ -35,6 +35,15 @@
 	ul.icons li a {
 		font-size: 1.6em;
 	}
+	
+	/* Sidebar */
+.sidebar {
+
+  position: absolute;
+  top: 700px;
+  right: 80px;
+  display: block;
+}
 
 /* Main */
 

@@ -90,13 +90,13 @@
 	}
 
 	hr {
-		border-top: solid 1px #82b440;
+		border-top: solid 1px #669900;
 		border: 0;
 		margin-bottom: 1.5em;
 	}
 
 	blockquote {
-		border-left: solid 0.5em #82b440;
+		border-left: solid 0.5em #669900;
 		font-style: italic;
 		padding: 1em 0 1em 2em;
 	}
@@ -143,7 +143,7 @@
 		-ms-appearance: none;
 		appearance: none;
 		background: none;
-		border: solid 1px #82b440;
+		border: solid 1px #669900;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -156,7 +156,7 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: #82b440;
+			border-color: #669900;
 		}
 
 	input[type="text"],
@@ -361,7 +361,7 @@
 			display: inline-block;
 			padding-right: 1em;
 			font-size: 1.4em;
-			color: #82b440;
+			color: #669900;
 		}
 
 		ul.special-icons p {
@@ -379,7 +379,7 @@
 		}
 
 			table.default tbody tr {
-				border-bottom: solid 1px #82b440;
+				border-bottom: solid 1px #669900;
 			}
 
 			table.default td {
@@ -411,8 +411,8 @@
 		background: none;
 		border-radius: none;
 		border: 2px solid;
-		border-color: #82b440;
-		color: #82b440;
+		border-color: #669900;
+		color: #669900;
 		cursor: pointer;
 		display: inline-block;
 		padding: 0.90em 1.2em;
@@ -432,7 +432,7 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background: #82b440;
+			background: #669900;
 			color: white;
 		}
 
@@ -449,7 +449,7 @@
 			input[type="button"].alt:hover,
 			.button.alt:hover {
 				background: white;
-				color: #82b440;
+				color: #669900;
 			}
 
 		input[type="submit"].fit,
@@ -474,7 +474,7 @@
 
 		.wrapper.style1 {
 			padding: 0em;
-			background: #222222 url(../images/banner.jpg) no-repeat;
+			background: #222222 url(../images/ked.jpg) no-repeat;
 			background-size: cover;
 		}
 
@@ -534,9 +534,9 @@
 		}
 
 		.wrapper.style5 {
-			background: #82b440;
+			background: white;
 			text-align: center;
-			color: white;
+			color: black;
 		}
 
 			.wrapper.style5 .image {
@@ -548,7 +548,7 @@
 				.wrapper.style5 .image img {
 					border-radius: 50%;
 					border: 10px solid;
-					border-color: white;
+					border-color: grey;;
 				}
 
 /* Header */
@@ -683,7 +683,9 @@
 		#banner h2 {
 			display: inline-block;
 			padding: 0.50em 0.30em;
-			background: #82b440;
+			background: rgba(85, 85, 85, 0.5);
+			width: 100%;
+			height: 500;
 			font-size: 3em;
 			font-weight: 400;
 		}
@@ -811,8 +813,9 @@
 
   position: absolute;
   top: 700px;
-  right: 80px;
+  right: 30px;
   display: block;
+  width: 700px
 }
 
 
@@ -842,11 +845,19 @@ div.content {
   padding: 1px 16px;
   height: 1000px;
 }
-
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1500px) {
   .sidebar {
-   display: none;
+  width: 400px;
+    display: block;
+      position: absolute;
+  top: 700px;
+  right: 30px;}}
+  
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 850px) {
+  .sidebar {
+  display: none;
   }
   .sidebar a {float: right;}
   div.content {margin-left: 0;}
@@ -855,6 +866,6 @@ div.content {
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
   .sidebar a {
-   display: none;
+display: none;
   }
 }
